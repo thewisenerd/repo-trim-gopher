@@ -1,0 +1,14 @@
+repo-trim-gopher
+----------------
+
+-b: mirror base URL
+-n: number of versions to keep
+
+why
+---
+
+maven takes a _lot_ of time for dependency resolution if a large number of
+versions exist in a bunch of groupId:artifactId; so, mitm the mirror and
+return only the last `n` versions;
+
+ideal solution? get a proper repository manager and clean by unused x days.
